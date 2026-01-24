@@ -1,0 +1,203 @@
+.principles-section {
+  background: #000;
+  color: #fff;
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.container-principle-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.principles-section .principle-header .principle-pill {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  color: #bbb;
+  border: 1px solid #333;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.principles-section .principle-header .principle-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.02em;
+}
+
+.principles-section .principle-header .principle-description {
+  color: #aaa;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.principles-section .principle-steps {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.principles-section .principle-steps .principle-step {
+  display: inline-block;
+  background: #111;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  color: #666;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.principles-section .principle-steps .principle-step.active {
+  background: linear-gradient(135deg, #8b5fbf, #6b4d94);
+  color: #fff;
+}
+
+/* Cards */
+.principles-section .principle-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.principles-section .principle-card {
+  background: linear-gradient(135deg, rgba(103, 60, 118, 0.15), rgba(68, 55, 115, 0.08));
+  border: 1px solid rgba(84, 57, 113, 0.5);
+  border-radius: 12px;
+  padding: 1.8rem;
+  text-align: left;
+  min-height: 140px;
+  position: relative;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.principles-section .principle-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(84, 57, 113, 0.8);
+  background: linear-gradient(135deg, rgba(103, 60, 118, 0.25), rgba(68, 55, 115, 0.15));
+}
+
+.principles-section .principle-card .principle-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.principles-section .principle-card .principle-card-title .principle-card-number {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #888;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.principles-section .principle-card .principle-card-text {
+  font-size: 0.9rem;
+  color: #aaa;
+  line-height: 1.5;
+}
+
+/* Highlight Box */
+.principles-section .principle-highlight-box {
+  border: 1px solid rgba(84, 57, 113, 0.6);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  margin-top: 200px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+}
+
+.principles-section .principle-highlight-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, rgba(183, 138, 255, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.principles-section .principle-highlight-box .principle-highlight-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  position: relative;
+  z-index: 1;
+}
+
+.principles-section .principle-highlight-box .principle-glow {
+  color: #b78aff;
+  text-shadow: 0 0 20px rgba(183, 138, 255, 0.6), 0 0 40px rgba(183, 138, 255, 0.3);
+  background: linear-gradient(135deg, #b78aff, #9d6bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.principles-section .principle-highlight-box .principle-highlight-text {
+  color: #aaa;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.principles-section .principle-btn {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(84, 57, 113, 0.8);
+  padding: 0.7rem 1.4rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+
+.principles-section .principle-btn:hover {
+  background: linear-gradient(135deg, rgba(84, 57, 113, 0.8), rgba(103, 60, 118, 0.6));
+  border-color: rgba(84, 57, 113, 1);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(84, 57, 113, 0.3);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .principles-section .principle-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .principles-section .principle-header .principle-title {
+    font-size: 2.4rem;
+  }
+
+  .principles-section .principle-highlight-box .principle-highlight-title {
+    font-size: 2.4rem;
+  }
+}

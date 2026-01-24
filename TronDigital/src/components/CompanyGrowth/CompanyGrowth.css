@@ -1,0 +1,66 @@
+.company-growth-section {
+  padding: 5rem 1.5rem;
+}
+
+.company-growth-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border: 2px solid #595670;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.company-growth-heading h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.work-faster {
+  color: #c084fc;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.company-growth-heading p {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  margin-bottom: 80px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.company-growth-graph img {
+  width: 718px;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .company-growth-container {
+    flex-direction: column;
+  }
+
+  .company-growth-graph img {
+    width: 100%;
+  }
+
+  .company-growth-heading {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .company-growth-heading h3 {
+    font-size: 1.8rem;
+  }
+
+  .company-growth-heading p {
+    font-size: 1rem;
+  }
+}

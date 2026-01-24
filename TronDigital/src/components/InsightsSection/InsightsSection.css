@@ -1,0 +1,191 @@
+.insights-section {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* Header */
+.insights-header {
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.insights-tag {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #8e70ad;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #8e70ad;
+  margin-bottom: 15px;
+}
+
+.insights-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.insights-subtitle {
+  font-size: 16px;
+  color: #aaa;
+}
+
+/* Grid */
+/* Grid - always 3 cards per row, centered */
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; /* Equal spacing between cards */
+  justify-content: center;
+  margin: 40px auto; /* Equal margin on left & right */
+  max-width: 1200px; /* Keep grid centered & not too wide */
+}
+
+/* Card styles */
+.insight-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 320px; /* Reduced card width */
+  margin: 0 auto; /* Center each card inside grid */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.insight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image inside card */
+.insight-card img {
+  width: 100%;
+  height: 200px; /* Smaller height */
+  object-fit: cover;
+}
+
+/* Card content */
+.insight-card-content {
+  padding: 20px;
+}
+
+.insight-card-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.insight-card-content p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Button inside card */
+.insight-card-content a {
+  color: #8375c2;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.insight-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.card-content p {
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #444;
+}
+
+.read-link {
+  color: #7c3aed;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.read-link:hover {
+  color: #8375c2;
+}
+
+/* Read more button */
+.read-more {
+  margin-top: 50px;
+}
+
+/* Read more button with gradient */
+.read-more button {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #8e70ad;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #8e70ad;
+  margin-bottom: 15px;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.read-more button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 15px rgba(131, 117, 194, 0.4);
+}
+
+/* Default - Desktop (3 cards) */
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+/* Tablet - 2 cards per row */
+@media (max-width: 1024px) {
+  .insights-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 900px;
+  }
+  .insight-card {
+    width: 100%;
+  }
+}
+
+/* Mobile - 1 card per row */
+@media (max-width: 768px) {
+  .insights-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    max-width: 500px;
+  }
+  .insight-card {
+    width: 100%;
+  }
+}

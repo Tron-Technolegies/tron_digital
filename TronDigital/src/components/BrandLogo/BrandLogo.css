@@ -1,0 +1,66 @@
+/* Section background + padding */
+.brand-section {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+/* Centered container */
+.brand-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Title styling */
+.brand-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+/* Slider wrapper */
+.brand-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Track that moves left */
+.brand-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+/* Each logo wrapper */
+.brand-logo {
+  flex: 0 0 auto;
+  margin: 0 40px; /* space between logos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo image styling */
+.brand-logo img {
+  height: 40px;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effect */
+.brand-logo img:hover {
+  opacity: 0.7;
+}
+
+/* Keyframes for auto-scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

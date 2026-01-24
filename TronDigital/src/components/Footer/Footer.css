@@ -1,0 +1,174 @@
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 50px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #a78bfa;
+}
+
+/* Contact info */
+.footer-col p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Subscribe box */
+.subscribe {
+  background: #111;
+  padding: 20px;
+}
+
+.subscribe-box {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.subscribe-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+  background-color: #fff;
+  color: #000;
+}
+
+.subscribe-box input::placeholder {
+  color: #aaa;
+}
+
+.subscribe-box button {
+  background: #007bff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+}
+
+.subscribe-text {
+  font-size: 13px;
+  color: #aaa;
+  line-height: 1.5;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  border-top: 1px solid #222;
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer-logo img {
+  height: 50px; /* Adjust based on your logo size */
+}
+
+.footer-links a {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+}
+
+.footer-socials a {
+  margin-left: 15px;
+  color: #fff;
+  font-size: 16px;
+  background: #333;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  background: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}

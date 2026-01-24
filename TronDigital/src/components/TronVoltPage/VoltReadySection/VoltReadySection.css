@@ -1,0 +1,113 @@
+.volt-section {
+  background-color: #00020f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+.volt-container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #444;
+  border-radius: 1rem;
+  padding: 3rem;
+  box-shadow: 0 0 25px rgba(154, 224, 254, 0.15);
+}
+
+/* Gradient heading */
+.volt-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #9ae0fe, #7aa0eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .volt-heading {
+    font-size: 2.5rem;
+  }
+}
+
+.volt-description {
+  color: #aaa;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  font-size: 1.125rem;
+}
+
+.volt-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .volt-buttons {
+    flex-direction: row;
+  }
+}
+
+/* Buttons */
+.btn {
+  padding: 0.75rem 2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #2ad1fe, #288dff);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(42, 209, 254, 0.5);
+  border: none;
+}
+
+.btn-secondary {
+  background: #000;
+  color: #fff;
+  border: 1px solid #555;
+  box-shadow: 0 0 20px rgba(42, 209, 254, 0.25);
+}
+
+/* Mobile button sizing */
+@media (max-width: 639px) {
+  .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .volt-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .volt-heading {
+    font-size: 1.75rem;
+  }
+
+  .volt-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+  }
+
+  .volt-buttons {
+    gap: 1rem;
+  }
+}

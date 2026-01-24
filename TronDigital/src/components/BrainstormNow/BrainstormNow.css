@@ -1,0 +1,106 @@
+.brainstorm-section {
+  position: relative;
+  background-color: #15082c; /* dark bg */
+  padding: 2rem 1rem; /* space inside */
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Main circle */
+.circle-main {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  background-color: #5b21b6;
+  opacity: 0.4;
+}
+
+/* Small circle */
+.circle-small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-66%, 33%);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: #5b21b6;
+  opacity: 0.4;
+}
+
+/* Rings */
+.circle-ring {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.circle-ring.outer {
+  width: 85%;
+  height: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-ring.inner {
+  width: 70%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Content */
+.brainstorm-content {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+}
+
+.label {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #a78bfa;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  background: #7c3aed;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
