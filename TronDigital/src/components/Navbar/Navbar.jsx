@@ -1,20 +1,34 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { handleChatClickCustom } from "../../utils/whatsapp";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  function handleNavigation(id) {
+    if (location.pathname === "/") {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+      }, 200);
+    }
+  }
 
   return (
     <>
-      <header className="header">
+      <header className="header" style={{ backgroundColor: "black" }}>
         {/* Logo */}
-        <a href="#home" className="nav-logo" onClick={closeMenu}>
+        <Link to={"/"} className="nav-logo" onClick={closeMenu}>
           <img src="/logo.png" alt="Tron Digital" />
-        </a>
+        </Link>
 
         {/* Hamburger */}
         <div className="menu-icon" onClick={toggleMenu}>
@@ -24,18 +38,44 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="navbar desktop-nav">
-          <a href="#home">Home</a>
-          <a href="#insights">Case Study</a>
-          <a href="#services">Services</a>
-          <a href="#about">About</a>
+        <nav className="navbar desktop-nav text-white">
+          <p
+            onClick={() => handleNavigation("home")}
+            className="cursor-pointer"
+          >
+            Home
+          </p>
+          <p
+            onClick={() => handleNavigation("insights")}
+            className="cursor-pointer"
+          >
+            Case Study
+          </p>
+          <p
+            onClick={() => handleNavigation("services")}
+            className="cursor-pointer"
+          >
+            Services
+          </p>
+          <p
+            onClick={() => handleNavigation("about")}
+            className="cursor-pointer"
+          >
+            About
+          </p>
 
           {/* Real route → keep Link */}
           <Link to="/tron-volt">Tron Volt</Link>
 
-          <a href="#contact">
-            <button>Contact Us</button>
-          </a>
+          <button
+            onClick={() =>
+              handleChatClickCustom(
+                "Hi I would like to know more about Tron Digital",
+              )
+            }
+          >
+            Contact Us
+          </button>
         </nav>
       </header>
 
@@ -54,26 +94,57 @@ const Navbar = () => {
         </div>
 
         <div className="mobile-nav-links">
-          <a href="#home" onClick={closeMenu}>
+          <p
+            onClick={() => {
+              handleNavigation("home");
+              closeMenu();
+            }}
+            className="cursor-pointer"
+          >
             Home
-          </a>
-          <a href="#insights" onClick={closeMenu}>
+          </p>
+          <p
+            onClick={() => {
+              handleNavigation("insights");
+              closeMenu();
+            }}
+            className="cursor-pointer"
+          >
             Case Study
-          </a>
-          <a href="#services" onClick={closeMenu}>
+          </p>
+          <p
+            onClick={() => {
+              handleNavigation("services");
+              closeMenu();
+            }}
+            className="cursor-pointer"
+          >
             Services
-          </a>
-          <a href="#about" onClick={closeMenu}>
+          </p>
+          <p
+            onClick={() => {
+              handleNavigation("about");
+              closeMenu();
+            }}
+            className="cursor-pointer"
+          >
             About
-          </a>
+          </p>
 
           <Link to="/tron-volt" onClick={closeMenu}>
             Tron Volt
           </Link>
 
-          <a href="#contact" onClick={closeMenu}>
-            <button>Contact Us</button>
-          </a>
+          <button
+            onClick={() => {
+              handleChatClickCustom(
+                "I would like to know more about Tron Digital",
+              );
+              closeMenu();
+            }}
+          >
+            Contact Us
+          </button>
         </div>
       </nav>
     </>

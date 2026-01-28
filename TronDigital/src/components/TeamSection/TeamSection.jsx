@@ -35,17 +35,20 @@ const teamMembers = [
 
 export default function TeamSection() {
   return (
-    <section className="team-container">
+    <section className="team-container" id="team">
       <p className="team-badge">✦ Our Team</p>
       <h2 className="team-title">Our Digital Consultants</h2>
       <p className="team-subtitle">
-        Felis, semper ullamcorper sed pretium tristique vulputate semper massa ultrices. Integer
-        orci gravida blandit amet.
+        Felis, semper ullamcorper sed pretium tristique vulputate semper massa
+        ultrices. Integer orci gravida blandit amet.
       </p>
       <div className="team-grid">
         {teamMembers.map((member, idx) => (
           <div className="team-card" key={idx}>
-            <div className="team-card-top" style={{ backgroundColor: member.bg }}>
+            <div
+              className="team-card-top"
+              style={{ backgroundColor: member.bg }}
+            >
               <img src={member.img} alt={member.name} />
             </div>
             <div className="team-card-bottom">

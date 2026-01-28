@@ -50,13 +50,13 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="services-section">
+    <section className="services-section" id="services">
       <div className="services-header">
         <p className="services-label">✦ Our Services</p>
         <h2>What we do</h2>
         <p className="services-intro">
-          We specialize in creative digital solutions that elevate your brand and engage your
-          audience.
+          We specialize in creative digital solutions that elevate your brand
+          and engage your audience.
         </p>
       </div>
 

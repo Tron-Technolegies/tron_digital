@@ -7,10 +7,11 @@ import tronMarketing from "../../assets/tron-marketing.png";
 import tronStudio from "../../assets/tron-studio.png";
 import tronicon from "../../assets/tron-icon.png";
 import "./TronVoltSection.css";
+import { handleChatClickCustom } from "../../utils/whatsapp";
 
 export default function TronVoltSection() {
   return (
-    <section className="tron-section">
+    <section className="tron-section" id="tron-volt">
       <div className="hero">
         <img src={sphereImg} alt="Sphere" className="sphere" />
 
@@ -20,7 +21,8 @@ export default function TronVoltSection() {
 
         <p className="subtitle">
           A hub for digital creators, learners, and innovators to{" "}
-          <span className="highlight">connect</span>, <span className="highlight">grow</span>, and{" "}
+          <span className="highlight">connect</span>,{" "}
+          <span className="highlight">grow</span>, and{" "}
           <span className="highlight">thrive</span>.
         </p>
 
@@ -29,40 +31,53 @@ export default function TronVoltSection() {
             <li>
               <h3>1. Empowering the Next Generation of Digital Talent</h3>
               <p>
-                Tron Volt bridges the gap between learning and real-world application. From
-                mastering SEO strategies to launching full-scale campaigns, our ecosystem supports
-                every step of the way. It's not just a platform—it's your launchpad into the digital
-                future.
+                Tron VOLT bridges the gap between learning and real-world
+                execution. From mastering SEO and performance marketing to
+                launching real campaigns and projects, our ecosystem is built to
+                help you turn skills into outcomes. This isn’t just learning —
+                it’s preparation for the digital economy.
               </p>
             </li>
             <li>
               <h3>2. A Community That Grows Together</h3>
               <p>
-                At Tron Volt, collaboration isn't a feature — it's the foundation. Engage in live
-                sessions, community challenges, and team projects that sharpen your skills while
-                building lasting connections.
+                Growth is faster when it’s shared. Tron VOLT is built on
+                collaboration through live sessions, peer discussions, community
+                challenges, and team-based projects. Learn from mentors,
+                exchange ideas with peers, and build connections that last
+                beyond the platform.
               </p>
             </li>
             <li>
               <h3>3. Your Digital Playground</h3>
               <p>
-                Experiment, learn, fail, succeed — repeat. Tron Volt is a space where digital minds
-                can explore their creativity, test ideas in safe environments, and receive feedback
-                from industry mentors and peers.
+                Tron VOLT is a safe space to experiment, create, and iterate.
+                Test ideas, explore tools, and push creative boundaries while
+                receiving real feedback from industry professionals and an
+                active digital community. Learn by doing — without the fear of
+                failure.
               </p>
             </li>
             <li>
               <h3>4. Built for All Stages of Your Journey</h3>
               <p>
-                Whether you're just starting out or looking to scale your digital agency, Tron Volt
-                offers resources tailored to your level. Access toolkits, templates, and expert
-                advice—all in one place.
+                Whether you’re starting from zero or scaling an agency or
+                career, Tron VOLT adapts to your level. Get access to curated
+                resources, toolkits, templates, and expert guidance — all
+                designed to support your growth at every stage
               </p>
             </li>
           </ul>
         </div>
 
-        <button className="connect-btn">
+        <button
+          className="connect-btn"
+          onClick={() =>
+            handleChatClickCustom(
+              "Hello i would like to connect with Tron Digital",
+            )
+          }
+        >
           Connect <ArrowRight size={18} />
         </button>
       </div>
@@ -73,16 +88,28 @@ export default function TronVoltSection() {
           Our <span className="highlight">Digital</span> Crew
         </h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          At TRON, we’re not just an agency — we’re a connected digital
+          ecosystem. Each vertical is built with a clear purpose, working
+          together to create, scale, and sustain digital success for brands and
+          professionals. From learning and innovation to execution and
+          creativity, our digital crew operates as one unified force.
         </p>
 
         {/* Diagram with connectors */}
         <div className="diagram">
-          <svg className="diagram-svg" viewBox="0 0 800 280" preserveAspectRatio="xMidYMid meet">
+          <svg
+            className="diagram-svg"
+            viewBox="0 0 800 280"
+            preserveAspectRatio="xMidYMid meet"
+          >
             <defs>
-              <linearGradient id="curveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <linearGradient
+                id="curveGradient"
+                x1="0%"
+                y1="0%"
+                x2="0%"
+                y2="100%"
+              >
                 <stop offset="0%" stopColor="#c084fc" stopOpacity="1" />
                 <stop offset="100%" stopColor="#c084fc" stopOpacity="0.1" />
               </linearGradient>
@@ -130,10 +157,18 @@ export default function TronVoltSection() {
           </div>
 
           <div className="logos">
-            <img src={tronAcademy} alt="Tron Academy" />
-            <img src={tronTech} alt="Tron Technology" />
-            <img src={tronMarketing} alt="Tron Marketing" />
-            <img src={tronStudio} alt="Tron Studio" />
+            <a href="https://tronacademy.in" target="_blank">
+              <img src={tronAcademy} alt="Tron Academy" />
+            </a>
+            <a href="https://technologies.trondigital.ae" target="_blank">
+              <img src={tronTech} alt="Tron Technology" />
+            </a>
+            <a href="https://marketing.trondigital.ae" target="_blank">
+              <img src={tronMarketing} alt="Tron Marketing" />
+            </a>
+            <a href="https://studio.trondigital.ae" target="_blank">
+              <img src={tronStudio} alt="Tron Studio" />
+            </a>
           </div>
         </div>
       </div>
@@ -204,7 +239,9 @@ export default function TronVoltSection() {
           border-radius: 12px;
           padding: 1px;
           background: linear-gradient(90deg, #8375c2, #d1b6be);
-          -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
           -webkit-mask-composite: xor;
           mask-composite: exclude;
           pointer-events: none;

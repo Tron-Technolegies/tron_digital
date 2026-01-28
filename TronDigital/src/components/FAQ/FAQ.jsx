@@ -57,12 +57,12 @@ export default function FAQ() {
   };
 
   return (
-    <section className="faq-section">
+    <section className="faq-section" id="faq">
       <p className="faq-badge">✦ FAQ</p>
       <h2 className="faq-title">Frequently Asked Questions</h2>
       <p className="faq-subtitle">
-        We're here to help with any questions you have about plans, accounts, and supported
-        features.
+        We're here to help with any questions you have about plans, accounts,
+        and supported features.
       </p>
 
       {/* Tabs */}

@@ -19,65 +19,20 @@ import BrainstormNow from "../components/BrainstormNow/BrainstormNow";
 const Homepage = () => {
   return (
     <div>
-      <Navbar />
-
-      <section id="home">
-        <HeroSection />
-      </section>
-
-      <section id="about">
-        <AboutUs />
-      </section>
-
-      <section id="how-we-help">
-        <HowCanWe />
-      </section>
-
-      <section id="tron-volt">
-        <TronVoltSection />
-      </section>
-
-      <section id="future">
-        <FutureSection />
-      </section>
-
-      <section id="principles">
-        <OurPrinciplesSection />
-      </section>
-
-      <section id="services">
-        <OurServices />
-      </section>
-
-      <section id="experts">
-        <DigitalExperts />
-      </section>
-
-      <section id="growth">
-        <CompanyGrowth />
-      </section>
-
-      <section id="brands">
-        <BrandLogo />
-      </section>
-
-      <section id="insights">
-        <InsightsSection />
-      </section>
-
-      <section id="team">
-        <TeamSection />
-      </section>
-
-      <section id="faq">
-        <FAQ />
-      </section>
-
-      <section id="contact">
-        <BrainstormNow />
-      </section>
-
-      <Footer />
+      <HeroSection />
+      <AboutUs />
+      <HowCanWe />
+      <TronVoltSection />
+      <FutureSection />
+      <OurPrinciplesSection />
+      <OurServices />
+      <DigitalExperts />
+      <CompanyGrowth />
+      <BrandLogo />
+      <InsightsSection />
+      <TeamSection />
+      <FAQ />
+      <BrainstormNow />
     </div>
   );
 };

@@ -1,9 +1,10 @@
 import React from "react";
 import "./BrainstormNow.css"; // import CSS file
+import { handleChatClickCustom } from "../../utils/whatsapp";
 
 export default function BrainstormNow() {
   return (
-    <div className="brainstorm-section">
+    <div className="brainstorm-section" id="contact">
       {/* Main half circle with concentric rings */}
       <div className="circle-main">
         <div className="circle-ring outer"></div>
@@ -26,7 +27,16 @@ export default function BrainstormNow() {
           Risus elit et fringilla habitant ut facilisi.
         </p>
 
-        <button className="cta-btn">Start For Free</button>
+        <button
+          onClick={() =>
+            handleChatClickCustom(
+              "I would like to build some ideas with tron digital",
+            )
+          }
+          className="cta-btn"
+        >
+          Start For Free
+        </button>
       </div>
     </div>
   );

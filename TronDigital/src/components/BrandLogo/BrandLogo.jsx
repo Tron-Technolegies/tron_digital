@@ -11,9 +11,11 @@ export default function BrandLogos() {
   const logos = [microsoft, adobe, shopify, slack, booking];
 
   return (
-    <section className="brand-section">
+    <section className="brand-section" id="brands">
       <div className="brand-container">
-        <h2 className="brand-title">Collaborations Across the Technology Ecosystem</h2>
+        <h2 className="brand-title">
+          Collaborations Across the Technology Ecosystem
+        </h2>
 
         <div className="brand-slider">
           <div className="brand-track">

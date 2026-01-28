@@ -13,13 +13,11 @@ export default function TronVolt() {
   });
   return (
     <div>
-      <NavbarVolt />
       <VoltHero />
       <DigitalMarketingExcellence />
       <VoltReadySection />
       <FeaturesSection />
       <ContactSection />
-      <Footer />
     </div>
   );
 }

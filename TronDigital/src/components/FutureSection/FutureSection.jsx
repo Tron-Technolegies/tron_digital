@@ -6,13 +6,14 @@ export default function FutureSection() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   return (
-    <section className="future-section">
+    <section className="future-section" id="future">
       <div className="container">
         {/* Top Section */}
         <div className="top-section">
           <div className="text-content">
             <h2>
-              <span className="highlight">We believe</span> in defining the future
+              <span className="highlight">We believe</span> in defining the
+              future
             </h2>
             <p>{text}</p>
           </div>

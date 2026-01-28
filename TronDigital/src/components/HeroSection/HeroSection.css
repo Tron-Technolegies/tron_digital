@@ -118,7 +118,7 @@
 }
 
 .experience-number {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   color: white;
 }
@@ -126,7 +126,7 @@
 .experience-title {
   font-size: 18px;
   color: white;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 .experience-desc {
@@ -262,15 +262,15 @@
 }
 
 .team-title {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
   color: white;
 }
 
 .team-desc {
-  font-size: 14px;
+  font-size: 13px;
   color: #d1d1d1;
-  margin-top: 6px;
+  margin-top: 3px;
 }
 
 .team-img {

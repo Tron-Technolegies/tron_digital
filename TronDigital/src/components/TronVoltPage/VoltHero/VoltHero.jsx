@@ -15,7 +15,10 @@ const VoltHero = () => {
         </h1>
       </div>
       <div className="volt-hero-desc">
-        <p>A hub for digital creators, learners, and innovators to connect, grow, and thrive.</p>
+        <p>
+          A hub for digital creators, learners, and innovators to connect, grow,
+          and thrive.
+        </p>
       </div>
       <div className="stats-container">
         <div className="stat-card">
@@ -37,13 +40,33 @@ const VoltHero = () => {
             <div className="success-rate">98%</div>
             <div className="people-icons">👥👥👥</div>
             <svg viewBox="0 0 100 50" preserveAspectRatio="xMidYMid meet">
-              <path d="M10 50 A40 40 0 0 1 90 50" stroke="#1e3a8a" strokeWidth="8" fill="none" />
-              <path d="M10 50 A40 40 0 0 1 85 50" stroke="#3b82f6" strokeWidth="8" fill="none" />
-              <line x1="50" y1="50" x2="85" y2="50" stroke="#3b82f6" strokeWidth="2" />
+              <path
+                d="M10 50 A40 40 0 0 1 90 50"
+                stroke="#1e3a8a"
+                strokeWidth="8"
+                fill="none"
+              />
+              <path
+                d="M10 50 A40 40 0 0 1 85 50"
+                stroke="#3b82f6"
+                strokeWidth="8"
+                fill="none"
+              />
+              <line
+                x1="50"
+                y1="50"
+                x2="85"
+                y2="50"
+                stroke="#3b82f6"
+                strokeWidth="2"
+              />
             </svg>
           </div>
           <h3>98% Client Success Rate</h3>
-          <p>Join our community of satisfied clients benefiting from our proven expertise.</p>
+          <p>
+            Join our community of satisfied clients benefiting from our proven
+            expertise.
+          </p>
         </div>
         <div className="stat-card">
           <div className="bar-icon">
