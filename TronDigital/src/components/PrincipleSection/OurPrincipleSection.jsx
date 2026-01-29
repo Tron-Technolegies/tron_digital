@@ -10,8 +10,9 @@ export default function OurPrinciplesSection() {
           <span className="principle-pill">✦ Our Principles</span>
           <h2 className="principle-title">We Make - Intelligence Visible</h2>
           <p className="principle-description">
-            Our core principles guide everything we do, ensuring we deliver
-            excellence in every project.
+            Our principles guide how we think, build, and deliver. They keep us
+            focused on what matters — doing meaningful work, creating real
+            value, and delivering excellence in every project we take on.
           </p>
 
           {/* <div className="principle-steps">
@@ -28,8 +29,11 @@ export default function OurPrinciplesSection() {
               Unity <span className="principle-card-number">01</span>
             </h3>
             <p className="principle-card-text">
-              Developing the technology market by community building, and
-              conferences.
+              We grow together.
+              <br /> We believe strong results come from collaboration — within
+              our team, with our partners, and with our clients. By sharing
+              ideas, knowledge, and responsibility, we build better solutions
+              and stronger relationships.
             </p>
           </div>
           <div className="principle-card">
@@ -38,7 +42,10 @@ export default function OurPrinciplesSection() {
               <span className="principle-card-number">02</span>
             </h3>
             <p className="principle-card-text">
-              We maintain high standards for the quality of the work we do.
+              Details matter to us.
+              <br /> We set high standards for our work and don’t cut corners.
+              Every strategy, design, and campaign is reviewed, refined, and
+              optimized to ensure it performs the way it’s meant to.
             </p>
           </div>
           <div className="principle-card">
@@ -47,8 +54,10 @@ export default function OurPrinciplesSection() {
               <span className="principle-card-number">03</span>
             </h3>
             <p className="principle-card-text">
-              Before building reliable products, we build strong relationships
-              with our clients.
+              People before projects.
+              <br /> Before we build, we listen. Understanding our clients’
+              goals, challenges, and expectations helps us create solutions that
+              truly work and relationships that last.
             </p>
           </div>
           <div className="principle-card">
@@ -56,8 +65,10 @@ export default function OurPrinciplesSection() {
               Go Green <span className="principle-card-number">04</span>
             </h3>
             <p className="principle-card-text">
-              At Tron, we believe in doing what we can to protect the
-              environment.
+              Progress with responsibility.
+              <br /> We believe growth shouldn’t come at the cost of the planet.
+              From mindful processes to sustainable digital practices, we aim to
+              do our part in building a better future.
             </p>
           </div>
         </div>
@@ -69,8 +80,9 @@ export default function OurPrinciplesSection() {
             ductivity
           </h2>
           <p className="principle-highlight-text">
-            Turn Pro to harness the power of AI, make Raycast your own with
-            custom themes, keep your Macs in sync and more.
+            Turn strategy into action with smarter tools, AI-driven insights,
+            and systems built to help you work faster, think clearer, and scale
+            better.
           </p>
           <button
             className="principle-btn"

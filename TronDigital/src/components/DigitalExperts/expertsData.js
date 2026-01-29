@@ -3,48 +3,56 @@ export const experts = [
     id: 1,
     label: "Platform engineers",
     value: 85,
-    description: "Building scalable and reliable platforms.",
+    description:
+      " Build and maintain scalable, secure, and high-performance digital platforms.",
   },
   {
     id: 2,
     label: "Tech strategists",
     value: 90,
-    description: "Aligning technology with business vision.",
+    description:
+      " Translate business objectives into clear technology roadmaps and digital strategies.",
   },
   {
     id: 3,
     label: "Software engineers",
     value: 80,
-    description: "Developing robust and maintainable systems.",
+    description:
+      "Develop reliable, efficient, and future-ready applications and systems.",
   },
   {
     id: 4,
     label: "Designers",
     value: 70,
-    description: "Crafting intuitive and human-centered designs.",
+    description:
+      "Create intuitive, user-centered experiences that balance function and aesthetics.",
   },
   {
     id: 5,
     label: "DevOps experts",
     value: 75,
-    description: "Automating and optimizing deployments.",
+    description:
+      "Ensure smooth deployment, performance monitoring, and system reliability.",
   },
   {
     id: 6,
     label: "Data scientists",
     value: 65,
-    description: "Extracting insights from complex data.",
+    description:
+      "Transform data into actionable insights that support smarter decisions",
   },
   {
     id: 7,
     label: "Application architects",
     value: 88,
-    description: "Designing enterprise-grade applications.",
+    description:
+      " Design robust system architectures that scale with business growth",
   },
   {
     id: 8,
     label: "Innovation experts",
     value: 82,
-    description: "Driving innovation and future-ready solutions.",
+    description:
+      " Explore emerging technologies and creative approaches to keep brands ahead",
   },
 ];

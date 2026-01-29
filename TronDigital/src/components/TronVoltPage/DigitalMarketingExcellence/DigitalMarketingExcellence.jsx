@@ -6,8 +6,9 @@ const DigitalMarketingExcellence = () => {
     <div className="digital-marketing-container">
       <h1 className="title">Digital Marketing Excellence</h1>
       <p className="subtitle">
-        Transform your digital presence with our comprehensive marketing solutions. We don't just
-        run campaigns - we engineer digital success.
+        Transform your digital presence with strategies built for performance
+        and scale. At TRON Digital, we don’t just run campaigns — we engineer
+        digital success through data, creativity, and continuous optimization.
       </p>
       <div className="stats-grid">
         <div className="stat-box">
@@ -31,8 +32,8 @@ const DigitalMarketingExcellence = () => {
         <div className="service-box">
           <h2 className="service-title">Performance Marketing</h2>
           <p className="service-description">
-            Data-driven campaigns that deliver measurable ROI through advanced analytics and
-            optimization strategies.
+            Data-driven campaigns that deliver measurable ROI through advanced
+            analytics and optimization strategies.
           </p>
           <ul className="service-list">
             <li>PPC Management</li>
@@ -44,7 +45,8 @@ const DigitalMarketingExcellence = () => {
         <div className="service-box">
           <h2 className="service-title">Social Media Strategy</h2>
           <p className="service-description">
-            Build authentic connections with your audience across all major social platforms.
+            Build authentic connections with your audience across all major
+            social platforms.
           </p>
           <ul className="service-list">
             <li>Content Creation</li>
@@ -56,8 +58,8 @@ const DigitalMarketingExcellence = () => {
         <div className="service-box">
           <h2 className="service-title">SEO & Content Marketing</h2>
           <p className="service-description">
-            Dominate search results with strategic content that drives organic traffic and
-            engagement.
+            Dominate search results with strategic content that drives organic
+            traffic and engagement.
           </p>
           <ul className="service-list">
             <li>Technical SEO</li>
@@ -69,7 +71,8 @@ const DigitalMarketingExcellence = () => {
         <div className="service-box">
           <h2 className="service-title">Marketing Automation</h2>
           <p className="service-description">
-            Streamline your marketing processes with intelligent automation and personalization.
+            Streamline your marketing processes with intelligent automation and
+            personalization.
           </p>
           <ul className="service-list">
             <li>Email Campaigns</li>

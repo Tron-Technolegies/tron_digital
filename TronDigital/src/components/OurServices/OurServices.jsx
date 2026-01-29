@@ -15,37 +15,37 @@ export default function OurServices() {
     {
       icon: <FaDigitalOcean />,
       title: "Digital Marketing",
-      desc: "We offer expert digital marketing service to improve your business.",
+      desc: "We drive growth through data-driven SEO, performance marketing, social media, and conversion-focused campaigns. Every strategy is built to increase visibility, generate leads, and deliver ROI — not just impressions.",
     },
     {
       icon: <FaPaintBrush />,
       title: "Branding & Design",
-      desc: "To ‘stand out’, have the greatest branding and design work done.",
+      desc: "Your brand is more than a logo. We create strong brand identities, visual systems, and creative assets that communicate clearly, build trust, and stand out in competitive markets.",
     },
     {
       icon: <FaLaptopCode />,
       title: "Web Design",
-      desc: "Attract and convert customers with a stunning website.",
+      desc: "We design and build high-performing websites that are fast, intuitive, and conversion-ready. Every page is crafted to deliver a seamless user experience while supporting business goals.",
     },
     {
       icon: <FaMobileAlt />,
       title: "App Development",
-      desc: "To help you grow your company, we provide skilled app development.",
+      desc: "From concept to launch, we build scalable mobile and web applications tailored to your business needs. Our focus is on performance, usability, and long-term reliability.",
     },
     {
       icon: <FaShieldAlt />,
       title: "Cyber Security",
-      desc: "Advanced Cybersecurity services for business protection.",
+      desc: "We help protect your digital assets with advanced cybersecurity solutions. From risk assessments to system protection, we ensure your data, platforms, and operations remain secure.",
     },
     {
       icon: <FaBitcoin />,
       title: "Blockchain",
-      desc: "Blockchain services for business innovation and growth.",
+      desc: "We deliver blockchain solutions that support transparency, security, and innovation. From consulting to implementation, we help businesses explore and adopt blockchain with confidence.",
     },
     {
       icon: <FaRobot />,
       title: "Artificial Intelligence",
-      desc: "AI solutions to automate, improve service, and gain insights.",
+      desc: "We implement practical AI solutions that automate processes, improve customer experience, and unlock data-driven insights. Our AI services are designed to enhance efficiency and support smarter decision-making.",
     },
   ];
 
@@ -55,8 +55,10 @@ export default function OurServices() {
         <p className="services-label">✦ Our Services</p>
         <h2>What we do</h2>
         <p className="services-intro">
-          We specialize in creative digital solutions that elevate your brand
-          and engage your audience.
+          We specialize in building digital solutions that help brands grow,
+          scale, and stay ahead. From strategy and creativity to technology and
+          performance, our services are designed to deliver real, measurable
+          impact.
         </p>
       </div>
 

@@ -1,8 +1,17 @@
 import React, { useEffect } from "react";
-import { articles } from "../components/InsightsSection/InsightsSection";
+
 import { Link } from "react-router";
+import { articles } from "../utils/articles";
 
 export default function BlogPage() {
+  function limitHTML(html, maxLength) {
+    const div = document.createElement("div");
+    div.innerHTML = html;
+
+    const text = div.textContent || div.innerText || "";
+    return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+  }
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -16,15 +25,24 @@ export default function BlogPage() {
       </h1>
       <div className="max-w-6xl w-full grid md:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center justify-center mx-auto my-7">
         {articles.map((item) => (
-          <div key={item.id}>
+          <div key={item.id} className="flex flex-col gap-3 h-full bg-white">
             <img
               src={item.image}
               className="w-full object-cover rounded-t-md"
             />
             <div className="bg-white px-3 py-5 flex flex-col gap-3 rounded-b-md">
               <p className="font-semibold text-lg">{item.title}</p>
-              <p className="text-sm">{item.text}</p>
-              <Link to={`/blogs/${item.id}`} className="read-link">
+              <div
+                className="text-sm"
+                dangerouslySetInnerHTML={{
+                  __html: limitHTML(item.content, 100),
+                }}
+              ></div>
+
+              <Link
+                to={`/blogs/${item.id}`}
+                className="read-link justify-self-end mt-auto"
+              >
                 Read article →
               </Link>
             </div>

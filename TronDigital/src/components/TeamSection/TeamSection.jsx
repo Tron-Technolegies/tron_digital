@@ -1,34 +1,35 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import "./TeamSection.css";
+import { handleChatClickCustom } from "../../utils/whatsapp";
 
 const teamMembers = [
   {
-    name: "Lindsey Dokidis",
-    role: "Partner",
-    desc: "There are many variations of passages of Lorem Ipsum available",
-    img: "https://randomuser.me/api/portraits/women/44.jpg",
+    name: "Parvathy",
+    role: "Python Developer",
+    desc: "Builds scalable web and mobile apps with clean frontends and powerful backends.",
+    img: "/paaru.jpg",
     bg: "#8375C2",
   },
   {
-    name: "Martin Donin",
-    role: "Software Engineer",
-    desc: "There are many variations of passages of Lorem Ipsum available",
-    img: "https://randomuser.me/api/portraits/men/45.jpg",
+    name: "Shahma",
+    role: "Graphic Designer",
+    desc: "Creates visually striking designs that communicate brand identity clearly.",
+    img: "/shahma.jpg",
     bg: "#D1B6BE",
   },
   {
-    name: "Hanna Dias",
-    role: "Software Engineer",
-    desc: "There are many variations of passages of Lorem Ipsum available",
-    img: "https://randomuser.me/api/portraits/men/46.jpg",
+    name: "Shiju Kg",
+    role: "UI / UX Designer",
+    desc: "Designs intuitive, user-focused interfaces for smooth digital experiences.",
+    img: "/shiju.jpg",
     bg: "#7DD8A5",
   },
   {
-    name: "Leo Arcand",
-    role: "Software Engineer",
-    desc: "There are many variations of passages of Lorem Ipsum available",
-    img: "https://randomuser.me/api/portraits/men/47.jpg",
+    name: "Fayis",
+    role: "Digital Marketing Expert",
+    desc: "Drives growth through data-driven campaigns, content, and performance marketing.",
+    img: "/fayis.jpg",
     bg: "#D6A7E0",
   },
 ];
@@ -39,8 +40,10 @@ export default function TeamSection() {
       <p className="team-badge">✦ Our Team</p>
       <h2 className="team-title">Our Digital Consultants</h2>
       <p className="team-subtitle">
-        Felis, semper ullamcorper sed pretium tristique vulputate semper massa
-        ultrices. Integer orci gravida blandit amet.
+        Behind every strategy and solution is a team of experienced digital
+        professionals. Our consultants combine technical expertise, creative
+        thinking, and real-world execution to help businesses grow with
+        confidence.
       </p>
       <div className="team-grid">
         {teamMembers.map((member, idx) => (
@@ -49,27 +52,30 @@ export default function TeamSection() {
               className="team-card-top"
               style={{ backgroundColor: member.bg }}
             >
-              <img src={member.img} alt={member.name} />
+              <img
+                src={member.img}
+                alt={member.name}
+                className="object-cover object-top"
+              />
             </div>
             <div className="team-card-bottom">
               <h3>{member.name}</h3>
               <p className="role">{member.role}</p>
               <p className="desc">{member.desc}</p>
-              <div className="team-icons">
-                <a href="#">
-                  <FaFacebookF />
-                </a>
-                <a href="#">
-                  <FaInstagram />
-                </a>
-                <a href="#">
-                  <FaTwitter />
-                </a>
-              </div>
             </div>
           </div>
         ))}
       </div>
+      <button
+        className="my-5 p-2 bg-[#8846cb] text-white rounded-lg"
+        onClick={() =>
+          handleChatClickCustom(
+            "Hi iwould like to know more about the team of Tron Digital",
+          )
+        }
+      >
+        Know More
+      </button>
     </section>
   );
 }

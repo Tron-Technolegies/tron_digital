@@ -23,8 +23,10 @@ export default function BrainstormNow() {
         <h2 className="heading">Brainstorm now!</h2>
 
         <p className="description">
-          Malesuada ut aliquam at ac est nisl, interdum etiam dignissim. <br />
-          Risus elit et fringilla habitant ut facilisi.
+          Turn ideas into action with the right strategy, tools, and support.
+          Whether you’re planning a campaign, building a product, or scaling
+          your brand, TRON Digital helps you move from thinking to doing —
+          faster and smarter.
         </p>
 
         <button

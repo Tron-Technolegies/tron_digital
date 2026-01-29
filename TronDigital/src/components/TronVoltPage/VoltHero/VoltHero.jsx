@@ -4,7 +4,7 @@ import sphereimg from "../../../assets/sphere.png";
 
 const VoltHero = () => {
   return (
-    <section className="volt-hero">
+    <section className="volt-hero ">
       <div className="volt-hero-img">
         <img src={sphereimg} alt="Sphere" />
       </div>
@@ -18,6 +18,12 @@ const VoltHero = () => {
         <p>
           A hub for digital creators, learners, and innovators to connect, grow,
           and thrive.
+        </p>
+        <p className="text-sm mt-5">
+          Tron VOLT is where ideas turn into action. Whether you’re learning
+          digital skills, building creative projects, or experimenting with new
+          technologies, VOLT gives you the space, tools, and community to move
+          forward with confidence.
         </p>
       </div>
       <div className="stats-container">
@@ -33,7 +39,11 @@ const VoltHero = () => {
             </svg>
           </div>
           <h3>Fuel Your Growth</h3>
-          <p>Empower your business with our tailored web design solutions.</p>
+          <p>
+            Empower your journey with guided learning, real-world projects, and
+            hands-on experiences designed to sharpen skills and build confidence
+            in the digital space.
+          </p>
         </div>
         <div className="stat-card">
           <div className="gauge-icon">
@@ -64,8 +74,9 @@ const VoltHero = () => {
           </div>
           <h3>98% Client Success Rate</h3>
           <p>
-            Join our community of satisfied clients benefiting from our proven
-            expertise.
+            Built on trust, execution, and continuous improvement. Our ecosystem
+            supports individuals and teams in achieving consistent, measurable
+            progress.
           </p>
         </div>
         <div className="stat-card">
@@ -77,7 +88,11 @@ const VoltHero = () => {
             </svg>
           </div>
           <h3>Lead the Way</h3>
-          <p>Stay ahead with innovative web designs crafted by Tron.</p>
+          <p>
+            Stay ahead with access to insights, tools, and collaborative
+            challenges that help you innovate, adapt, and grow in a rapidly
+            evolving digital world.
+          </p>
         </div>
       </div>
     </section>

@@ -15,15 +15,15 @@ const faqData = {
   "Plans & Features": [
     {
       q: "What plans are available, and what do they include?",
-      a: "We offer Basic, Pro, and Business plans with varying levels of content access, AI tools, analytics, and campaign features.",
+      a: "We offer Basic, Pro, and Business plans. Each plan includes different levels of access to digital tools, analytics, AI-powered features, and campaign support. As you move up, you unlock more advanced capabilities, deeper insights, and higher usage limits.",
     },
     {
       q: "Can I switch between plans at any time?",
-      a: "Yes, you can upgrade or downgrade your plan at any time.",
+      a: "Yes. You can upgrade or downgrade your plan at any time. Changes take effect immediately or at the start of your next billing cycle, depending on your selection.",
     },
     {
       q: "Is there a free trial or demo available?",
-      a: "We offer a 14-day free trial with access to all premium features.",
+      a: "Yes. We offer a free trial or guided demo so you can explore the platform, features, and workflows before committing to a plan.",
     },
   ],
   Campaigns: [
